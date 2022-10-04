@@ -1,9 +1,12 @@
 import { Item } from "./styled"
+type Props = {
+  data: Data
+}
 
-
-export const Node = () => {
-
+export const Node = ({ data: { description, links, title } }: Props) => {
   return (
-    <Item />
+    <Item>
+      <h1>{title}</h1>
+    </Item>
   )
 }
