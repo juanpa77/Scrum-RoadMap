@@ -1,15 +1,18 @@
 import { Node } from "../Nodo"
+import { List } from "./styled"
 
 type Props = {
-  nodes: Tree
+  nodes: Nodes
 }
 
 const Tree = ({ nodes }: Props) => {
-
+  console.log(nodes.branch?.flat().length)
   return (
-    <>{
-      nodes.map(node => <Node data={node.data} />)
-    }</>
+    <List>
+      <Node data={nodes.data} />
+      {nodes.branch?.map(node => <Tree key={node.data.id} nodes={node} />
+      )}
+    </List>
   )
 }
 
