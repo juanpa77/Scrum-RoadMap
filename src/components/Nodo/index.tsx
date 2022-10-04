@@ -5,8 +5,10 @@ type Props = {
 
 export const Node = ({ data: { description, links, title } }: Props) => {
   return (
-    <Item>
+    <Item >
       <h1>{title}</h1>
+      <p>{description}</p>
+      <a>{links}</a>
     </Item>
   )
 }
