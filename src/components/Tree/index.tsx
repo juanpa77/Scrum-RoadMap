@@ -1,4 +1,5 @@
-import { Node } from "../Nodo"
+import { Node } from "../Node"
+import { NodeRoot } from "../RooteNode"
 import { List } from "./styled"
 
 type Props = {
@@ -8,9 +9,9 @@ type Props = {
 const Tree = ({ nodes }: Props) => {
   console.log(nodes.branch?.flat().length)
   return (
-    <List>
-      <Node data={nodes.data} />
-      {nodes.branch?.map(node => <Tree key={node.data.id} nodes={node} />
+    <List numbColumn={nodes.branch!.length}>
+      <NodeRoot data={nodes.data} rowEnd={nodes.branch!.length + 1} />
+      {nodes.branch?.map((node, i) => <Node key={node.data.id} data={node.data} lineRowStart={i + 1} />
       )}
     </List>
   )

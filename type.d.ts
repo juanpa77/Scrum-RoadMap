@@ -7,7 +7,7 @@ type Data = {
 
 type Nodes = {
   data: Data
-  branch?: Tree
+  branch?: Nodes[]
 }
 
 type Tree = Nodes[]

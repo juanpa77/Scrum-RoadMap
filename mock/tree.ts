@@ -16,7 +16,7 @@ export const mockNodes: Nodes = {
         links: 'www.git.com',
         id: '12321321ds2'
       },
-      branch: [
+      /* branch: [
         {
           data: {
             title: 'Childrentitle',
@@ -25,7 +25,15 @@ export const mockNodes: Nodes = {
             id: '13'
           }
         }
-      ]
+      ] */
+    },
+    {
+      data: {
+        title: 'Childrentitle',
+        description: 'Children description',
+        links: 'www.git.com',
+        id: '13'
+      }
     },
     {
       data: {
@@ -42,7 +50,7 @@ export const mockNodes: Nodes = {
         links: 'www.git.com',
         id: '12'
       },
-      branch: [
+      /* branch: [
         {
           data: {
             title: 'childrentitle',
@@ -61,7 +69,15 @@ export const mockNodes: Nodes = {
             }
           ]
         }
-      ]
+      ] */
+    },
+    {
+      data: {
+        title: 'Chilrentitle',
+        description: 'description',
+        links: 'www.git.com',
+        id: '1123132'
+      }
     }
   ]
 }

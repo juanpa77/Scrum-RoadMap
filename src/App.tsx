@@ -1,10 +1,10 @@
-import { mockTree } from '../mock/tree'
+import { mockNodes } from '../mock/tree'
 import Tree from './components/Tree'
 
 function App() {
 
   return (
-    <Tree nodes={mockTree} />
+    <Tree nodes={mockNodes} />
   )
 }
 
