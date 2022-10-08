@@ -10,7 +10,7 @@ export const NodeRoot = ({ data: { description, links, title }, rowEnd }: Porps)
     <HalfCircle rowEnd={rowEnd}>
       <BackgroundTransparent>
         <Wrapper>
-          <ItemRoot >
+          <ItemRoot>
             <h1>{title}</h1>
             <p>{description}</p>
             <a>{links}</a>

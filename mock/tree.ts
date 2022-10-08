@@ -16,7 +16,7 @@ export const mockNodes: Nodes = {
         links: 'www.git.com',
         id: '12321321ds2'
       },
-      /* branch: [
+      branch: [
         {
           data: {
             title: 'Childrentitle',
@@ -25,7 +25,7 @@ export const mockNodes: Nodes = {
             id: '13'
           }
         }
-      ] */
+      ]
     },
     {
       data: {
