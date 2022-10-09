@@ -1,10 +1,12 @@
-import { mockNodes } from '../mock/tree'
 import Tree from './components/Tree'
+import Wrapper from './style'
 
 function App() {
 
   return (
-    <Tree nodes={mockNodes} />
+    <Wrapper>
+      <Tree />
+    </Wrapper>
   )
 }
 
