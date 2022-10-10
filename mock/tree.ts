@@ -71,14 +71,7 @@ export const mockNodes: Nodes = {
         }
       ] */
     },
-    {
-      data: {
-        title: 'Chilrentitle',
-        description: 'description',
-        links: 'www.git.com',
-        id: '1123132'
-      }
-    }
+
   ]
 }
 // mockTree.map(node => node.data.description)

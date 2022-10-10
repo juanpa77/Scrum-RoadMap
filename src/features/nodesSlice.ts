@@ -9,7 +9,7 @@ const searchItem = (items: Nodes, nodeId: string) => {
     searchItem(item, nodeId)
   })[0]
 }
-
+// add implementation for add node a specific parent -comit -m
 const nodesSlice = createSlice({
   name: 'nodes',
   initialState,

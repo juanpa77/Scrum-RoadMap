@@ -10,7 +10,8 @@ describe('Node tree', () => {
   it('should render tree', () => {
     render(<Tree nodes={mockNodes} />)
     const renderList = screen.getAllByRole("listitem")
-    const totalItem = mockNodes.branch!.length + 1
+    const totalItem = mockNodes.branch!.length + 2
+
     expect(renderList.length).toEqual(totalItem)
   })
 

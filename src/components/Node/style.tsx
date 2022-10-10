@@ -27,6 +27,7 @@ export const Line = styled('div')`
 `
 export const Wrapper = styled('div')`
   display: flex;
+  flex-direction: column;
   background: linear-gradient(180deg, #630E97 0%, rgba(107, 10, 166, 0.83) 49.08%, #610997 100%);
   box-shadow: 4px 7px 4px rgba(0, 0, 0, 0.25);
   width: 600px;
